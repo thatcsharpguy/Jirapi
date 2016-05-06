@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jirapi", "Jirapi.csproj", "{3F362307-FEC5-4218-80F4-5457297983B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jirapi.Test", "Jirapi.Test\Jirapi.Test.csproj", "{FCB32B5D-4B26-441A-8EF0-12927AC2BCF9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3F362307-FEC5-4218-80F4-5457297983B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F362307-FEC5-4218-80F4-5457297983B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F362307-FEC5-4218-80F4-5457297983B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCB32B5D-4B26-441A-8EF0-12927AC2BCF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCB32B5D-4B26-441A-8EF0-12927AC2BCF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCB32B5D-4B26-441A-8EF0-12927AC2BCF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCB32B5D-4B26-441A-8EF0-12927AC2BCF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
