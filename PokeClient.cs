@@ -1,5 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using Jirapi.Resources;
+using Flurl.Http;
+using Flurl;
 using SystemType = System.Type;
 
 namespace Jirapi
@@ -8,9 +12,14 @@ namespace Jirapi
     {
         public const string EndpointV2 = "http://pokeapi.co/api/v2/";
 
+        public PokeClient()
+        {
+
+        }
+
         #region Resource endpoints dictionary
 
-        private static Dictionary<SystemType, string> UrlOfType = new Dictionary<SystemType, string>
+        private static Dictionary<SystemType, string> _urlOfType = new Dictionary<SystemType, string>
         {
             //{ typeof(ContestEffect     ), "contest-effect"       },
             //{ typeof(SuperContestEffect), "super-contest-effect" },
@@ -66,5 +75,24 @@ namespace Jirapi
         };
 
         #endregion
+
+        public async Task<T> Get<T>(int id)
+        {
+            return await Get<T>(id.ToString());
+        }
+
+        public async Task<T> Get<T>(string name)
+        {
+            string pathSegment;
+            if (_urlOfType.TryGetValue(typeof(T), out pathSegment))
+            {
+                return await EndpointV2.AppendPathSegments(pathSegment, name)
+                    .GetJsonAsync<T>();
+            }
+            else
+            {
+                throw new Exception($"Support for {typeof(T).Name} is not implemented yet");
+            }
+        }
     }
 }
