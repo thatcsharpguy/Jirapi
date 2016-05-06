@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using Jirapi.Resources;
 
 namespace Jirapi.Resources
 {

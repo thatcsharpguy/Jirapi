@@ -1,5 +1,3 @@
-using Jirapi.Resources;
-
 namespace Jirapi.Resources
 {
     public class FlavorBerryMap

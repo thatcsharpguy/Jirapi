@@ -1,6 +1,4 @@
-﻿using Jirapi.Resources;
-
-namespace Jirapi.Resources
+﻿namespace Jirapi.Resources
 {
     public class Stat
     {
