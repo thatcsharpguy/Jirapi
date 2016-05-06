@@ -51,7 +51,7 @@ namespace Jirapi.Test
             Assert.IsNotNull(pokemon);
             Assert.IsNotNull(pokemon.Species);
         }
-
+/*
         [Test]
         public async Task Query_NamedApiResource()
         {
@@ -63,5 +63,6 @@ namespace Jirapi.Test
             var species = await pc.Get<PokemonSpecies>(pokemon.Species.Name);
             Assert.IsNotNull(pokemon.Species.Resource);
         }
+*/        
     }
 }
