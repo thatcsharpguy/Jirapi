@@ -1,3 +1,5 @@
+using Newtonsoft.Json;
+
 namespace Jirapi.Resources
 {
     public class VersionGroupFlavorText
@@ -14,7 +16,7 @@ namespace Jirapi.Resources
         public NamedApiResource<Language> Language { get; set; }
 
 
-        //[JsonProperty("version_group")]
+        [JsonProperty("version_group")]
         public NamedApiResource<VersionGroup> VersionGroup { get; set; }
     }
 }

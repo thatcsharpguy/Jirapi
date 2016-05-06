@@ -1,13 +1,15 @@
+using Newtonsoft.Json;
+
 namespace Jirapi.Resources
 {
     public class VersionEncounterDetail
     {
         public NamedApiResource<Version> Version { get; set; }
 
-        //[JsonProperty("max_chance")]
+        [JsonProperty("max_chance")]
         public int MaxChance { get; set; }
 
-        //[JsonProperty("encounter_details")]
+        [JsonProperty("encounter_details")]
         public Encounter EncounterDetails { get; set; }
     }
 }

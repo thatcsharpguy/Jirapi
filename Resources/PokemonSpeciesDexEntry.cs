@@ -1,4 +1,6 @@
-﻿namespace Jirapi.Resources
+﻿using Newtonsoft.Json;
+
+namespace Jirapi.Resources
 {
     public class PokemonSpeciesDexEntry
     {
@@ -6,7 +8,7 @@
         ///     The index number within the Pokédex.
         /// </summary>
         /// <value>The entry number.</value>
-        //[JsonProperty("entry_number")]
+        [JsonProperty("entry_number")]
         public int EntryNumber { get; set; }
 
         /// <summary>

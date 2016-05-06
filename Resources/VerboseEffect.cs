@@ -1,3 +1,5 @@
+using Newtonsoft.Json;
+
 namespace Jirapi.Resources
 {
     public class VerboseEffect
@@ -10,7 +12,7 @@ namespace Jirapi.Resources
         /// <summary>
         ///     The localized effect text in brief.
         /// </summary>
-        //[JsonProperty("short_effect")]
+        [JsonProperty("short_effect")]
         public string ShortEffect { get; set; }
 
         /// <summary>

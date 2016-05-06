@@ -1,8 +1,10 @@
+using Newtonsoft.Json;
+
 namespace Jirapi.Resources
 {
     public class PokemonSpeciesFlavorText
     {
-        //[JsonProperty("flavor_text")]
+        [JsonProperty("flavor_text")]
         public string FlavorText { get; set; }
 
         public NamedApiResource<Language> Language { get; set; }

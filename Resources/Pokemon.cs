@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace Jirapi.Resources
 {
@@ -7,13 +8,13 @@ namespace Jirapi.Resources
         public int Id { get; set; }
         public string Name { get; set; }
 
-        //[JsonProperty("base_experience")]
+        [JsonProperty("base_experience")]
         public int BaseExperience { get; set; }
 
         public int Height { get; set; }
 
 
-        //[JsonProperty("is_default")]
+        [JsonProperty("is_default")]
         public bool IsDefault { get; set; }
 
         public int Order { get; set; }
@@ -22,15 +23,15 @@ namespace Jirapi.Resources
         public List<NamedApiResource<PokemonForm>> Forms { get; set; }
 
 
-        //[JsonProperty("game_indices")]
+        [JsonProperty("game_indices")]
         public List<VersionGameIndex> GameIndices { get; set; }
 
 
-        //[JsonProperty("held_items")]
+        [JsonProperty("held_items")]
         public List<NamedApiResource<Item>> HeldItems { get; set; }
 
 
-        //[JsonProperty("location_area_encounters")]
+        [JsonProperty("location_area_encounters")]
         public List<LocationAreaEncounter> LocationAreaEncounters { get; set; }
 
         public List<NamedApiResource<Move>> Moves { get; set; }

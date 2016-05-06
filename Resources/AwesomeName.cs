@@ -1,3 +1,5 @@
+using Newtonsoft.Json;
+
 namespace Jirapi.Resources
 {
     public class AwesomeName
@@ -6,7 +8,7 @@ namespace Jirapi.Resources
         ///     The localized "scientific" name for an API resource in a specific language.
         /// </summary>
         /// <value>The awesome name1.</value>
-        //[JsonProperty("awesome_name")]
+        [JsonProperty("awesome_name")]
         public string AwesomeName1 { get; set; }
 
         /// <summary>

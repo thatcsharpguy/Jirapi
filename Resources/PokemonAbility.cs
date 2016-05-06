@@ -1,8 +1,10 @@
+using Newtonsoft.Json;
+
 namespace Jirapi.Resources
 {
     public class PokemonAbility
     {
-        //[JsonProperty("is_hidden")]
+        [JsonProperty("is_hidden")]
         public bool IsHidden { get; set; }
 
         public int Slot { get; set; }

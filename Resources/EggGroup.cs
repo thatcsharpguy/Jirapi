@@ -12,7 +12,7 @@ namespace Jirapi.Resources
         ///     A list of all Pokémon species that are members of this egg group.
         /// </summary>
         /// <value>The pokemon species.</value>
-        /// //[JsonProperty("pokemon_species")]
+        /// [Newtonsoft.Json.JsonProperty("pokemon_species")]
         public List<NamedApiResource<PokemonSpecies>> PokemonSpecies { get; set; }
     }
 }

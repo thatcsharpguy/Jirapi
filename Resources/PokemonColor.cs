@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace Jirapi.Resources
 {
@@ -12,7 +13,7 @@ namespace Jirapi.Resources
         ///     A list of the Pokémon species that have this color.
         /// </summary>
         /// <value>The pokemon species.</value>
-        //[JsonProperty("pokemon_species")]
+        [JsonProperty("pokemon_species")]
         public List<NamedApiResource<PokemonSpecies>> PokemonSpecies { get; set; }
     }
 }

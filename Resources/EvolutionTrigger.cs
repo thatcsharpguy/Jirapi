@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace Jirapi.Resources
 {
@@ -8,7 +9,7 @@ namespace Jirapi.Resources
         public string Name { get; set; }
         public List<Name> Names { get; set; }
 
-        //[JsonProperty("pokemon_species")]
+        [JsonProperty("pokemon_species")]
         public List<NamedApiResource<PokemonSpecies>> PokemonSpecies { get; set; }
     }
 }
