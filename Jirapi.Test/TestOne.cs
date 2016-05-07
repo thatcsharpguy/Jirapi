@@ -51,18 +51,29 @@ namespace Jirapi.Test
             Assert.IsNotNull(pokemon);
             Assert.IsNotNull(pokemon.Species);
         }
-/*
+
         [Test]
-        public async Task Query_NamedApiResource()
+        public async Task NamedApiResource_FillResource()
         {
             _flurlTest
                 .RespondWith(Responses.Bulbasaur)
                 .RespondWith(Responses.BulbasaurSpecies);
             PokeClient pc = new PokeClient();
             var pokemon = await pc.Get<Pokemon>("bulbasaur");
-            var species = await pc.Get<PokemonSpecies>(pokemon.Species.Name);
+            await pokemon.Species.FillResource();
             Assert.IsNotNull(pokemon.Species.Resource);
         }
-*/        
+
+        [Test]
+        public async Task NamedApiResource_GetResource()
+        {
+            _flurlTest
+                .RespondWith(Responses.Bulbasaur)
+                .RespondWith(Responses.BulbasaurSpecies);
+            PokeClient pc = new PokeClient();
+            var pokemon = await pc.Get<Pokemon>("bulbasaur");
+            var species = await pokemon.Species.GetResource();
+            Assert.IsNotNull(species);
+        }
     }
 }
