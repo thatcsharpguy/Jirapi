@@ -99,6 +99,7 @@
     <Compile Include="Resources\PokemonSpeciesDexEntry.cs" />
     <Compile Include="Resources\PokemonSpeciesFlavorText.cs" />
     <Compile Include="Resources\PokemonSpeciesGender.cs" />
+    <Compile Include="Resources\PokemonSprites.cs" />
     <Compile Include="Resources\PokemonType.cs" />
     <Compile Include="Resources\Region.cs" />
     <Compile Include="Resources\Stat.cs" />

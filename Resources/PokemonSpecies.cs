@@ -103,7 +103,7 @@ namespace Jirapi.Resources
         [JsonProperty("evolution_chain")]
         public ApiResource<EvolutionChain> EvolutionChain { get; set; }
 
-        // TODO: Add habitat
+        public NamedApiResource<PokemonHabitat> Habitat { get; set; }
 
         /// <summary>
         ///     The generation this Pokémon species was introduced in.
@@ -124,12 +124,37 @@ namespace Jirapi.Resources
         [JsonProperty("pal_pak_encounters")]
         public List<PalParkEncounterArea> PalParkEncounters { get; set; }
 
-        // TODO: Add form_descriptions
+        /// <summary>
+        /// Descriptions of different forms Pokémon take on within the Pokémon species
+        /// </summary>
+        [JsonProperty("form_descriptions")]
+        public List<Description> FormDescriptions { get; set; }
 
-        // TODO: Add flavor_text_entries
+        /// <summary>
+        /// The flavor text of this flavor text listed in different languages
+        /// </summary>
+        [JsonProperty("flavor_text_entries")]
+        public List<PokemonSpeciesFlavorText> FlavorTextEntries { get; set; }
 
-        // TODO: Add genera
+        /// <summary>
+        /// The genus of this Pokémon species listed in multiple languages
+        /// </summary>
+        public List<Genus> Genera { get; set; }
 
-        // TODO: Add varieties
+        /// <summary>
+        /// A list of the Pokémon that exist within this Pokémon species
+        /// </summary>
+        [JsonProperty("varieties")]
+        public List<NamedApiResource<Pokemon>> Varieties { get; set; }
+    }
+
+    public class PokemonHabitat
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public List<Name> Names { get; set; }
+
+        [JsonProperty("pokemon_species")]
+        public List<NamedApiResource<PokemonSpecies>> PokemonSpecies { get; set; }
     }
 }

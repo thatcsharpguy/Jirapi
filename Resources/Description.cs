@@ -1,3 +1,5 @@
+using Newtonsoft.Json;
+
 namespace Jirapi.Resources
 {
     public class Description
@@ -5,6 +7,7 @@ namespace Jirapi.Resources
         /// <summary>
         ///     The localized description for an API resource in a specific language.
         /// </summary>
+        [JsonProperty("description")]
         public string Description1 { get; set; }
 
         /// <summary>

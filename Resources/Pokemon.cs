@@ -36,7 +36,10 @@ namespace Jirapi.Resources
 
         public List<NamedApiResource<Move>> Moves { get; set; }
         public NamedApiResource<PokemonSpecies> Species { get; set; }
+        public PokemonSprites Sprites { get; set; }
         public List<NamedApiResource<Stat>> Stats { get; set; }
         public List<PokemonType> Types { get; set; }
     }
+
+
 }

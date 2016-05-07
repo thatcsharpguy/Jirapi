@@ -61,7 +61,7 @@ namespace Jirapi
             {typeof(Pokemon), "pokemon"},
             {typeof(PokemonColor), "pokemon-color"},
             {typeof(PokemonForm), "pokemon-form"},
-            //{ typeof(PokemonHabitat), "pokemon-habitat" },
+            { typeof(PokemonHabitat), "pokemon-habitat" },
             {typeof(PokemonShape), "pokemon-shape"},
             {typeof(PokemonSpecies), "pokemon-species"},
             {typeof(Stat), "stat"},
