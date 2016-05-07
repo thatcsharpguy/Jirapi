@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Jirapi</id>
+    <version>0.0.13.0</version>
+    <title>Jirapi</title>
+    <authors>Antonio Feregrino</authors>
+    <owners>Antonio Feregrino</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Simple .NET client for http://pokeapi.co/</description>
+    <copyright>That C# guy, 2016</copyright>
+    <dependencies>
+      <dependency id="Flurl.Http" version="0.9.0" />
+    </dependencies>
+  </metadata>
+</package>

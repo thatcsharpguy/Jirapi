@@ -6,9 +6,9 @@ using System.Resources;
 // associated with an assembly.
 
 [assembly: AssemblyTitle("Jirapi")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Simple .NET client for http://pokeapi.co/")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("That C# guy")]
 [assembly: AssemblyProduct("Jirapi")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
@@ -26,5 +26,5 @@ using System.Resources;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("0.0.13.0")]
+[assembly: AssemblyFileVersion("0.0.13.0")]
