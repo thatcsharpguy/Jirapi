@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg4136"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   width="500"
+   height="500"
+   viewBox="0 0 500 500"
+   sodipodi:docname="icon.svg"
+   inkscape:export-filename="C:\Users\fferegrino\Documents\GitHub\Jirapi\icon.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <metadata
+     id="metadata4142">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4140" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     id="namedview4138"
+     showgrid="false"
+     inkscape:zoom="0.3195033"
+     inkscape:cx="90.586646"
+     inkscape:cy="270.06608"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g4204" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Star" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Letter"
+     style="display:inline">
+    <g
+       id="g4204"
+       transform="translate(-2.9700544e-8,28.257916)">
+      <g
+         transform="translate(3.1298655,0)"
+         id="g4197">
+        <path
+           style="opacity:1;fill:#f5f6fa;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 391.9259,191.51191 c 0,51.94714 -39.57137,99.53587 -138.57652,99.53587 -99.00514,0 -162.050444,-38.19915 -162.050441,-90.1463 -3e-6,-51.94714 57.568051,-94.84108 156.573191,-94.84108 99.00514,0 144.05377,33.50437 144.05377,85.45151 z"
+           id="path4194"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss" />
+        <path
+           style="display:inline;fill:#ffe590;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 257.48828,-3.3964844 c -21.49325,0.291481 -88.05984,79.9672074 -95.56836,122.8730444 -43.44216,4.29059 -163.0988278,60.3516 -162.31249812,75.84766 0.39665543,7.81682 54.67223812,42.31727 114.60155812,62.13672 -5.35092,11.07393 -10.70976,22.00696 -15.955074,31.86914 -24.079129,45.2733 -12.783287,67.51212 4.255864,72.36914 17.03913,4.85701 42.75862,-14.20139 48.05859,-65.73438 1.49332,-14.51992 7.97854,-58.71238 11.57887,-73.26982 9.11781,-13.04283 18.22396,-12.58992 26.17113,-18.03096 15.38361,14.64414 40.28903,23.35511 66.85352,23.38282 25.88412,-0.0272 50.23578,-8.301 65.71679,-22.32813 8.18729,6.45504 18.25705,4.81001 24.15465,21.54367 3.69864,16.65098 0.82266,65.80275 3.58754,81.08719 9.12786,50.45947 31.76744,60.92892 48.1543,54.19141 16.38684,-6.73752 24.78081,-37.6311 -2.96875,-81.37696 -3.32776,-5.24605 -6.47615,-10.79636 -9.48047,-16.48633 56.58948,-14.08412 109.4401,-47.5425 109.79687,-55.70117 C 494.90235,191.37867 381.40629,121.97345 345.47266,122.50977 338.50045,82.285546 278.98154,-3.6879654 257.48828,-3.3964844 Z"
+           id="path4158"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="scscssscccccssscscs" />
+      </g>
+      <g
+         transform="translate(2.7419687,85.583591)"
+         id="g4161">
+        <flowRoot
+           transform="translate(0,-32)"
+           xml:space="preserve"
+           id="flowRoot4147"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:190.06559753px;line-height:125%;font-family:'Nueva Std';-inkscape-font-specification:'Nueva Std Bold';letter-spacing:0px;word-spacing:0px;fill:#4bbfc1;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><flowRegion
+             id="flowRegion4149"><rect
+               id="rect4151"
+               width="527.68787"
+               height="464.01819"
+               x="35.801685"
+               y="199.68336"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:190.06559753px;font-family:'Nueva Std';-inkscape-font-specification:'Nueva Std Bold';fill:#4bbfc1;fill-opacity:1" /></flowRegion><flowPara
+             id="flowPara4153"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Snap ITC';-inkscape-font-specification:'Snap ITC';fill:#4bbfc1;fill-opacity:1">API</flowPara></flowRoot>      </g>
+    </g>
+  </g>
+</svg>
