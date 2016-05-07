@@ -1,8 +1,8 @@
 before_build:
   - nuget restore
 artifacts:
-  - path: Jirapi.*.nupkg
-    name: pack
+  - path: Jirapi.$(APPVEYOR_BUILD_VERSION).nupkg
+    name: nuget_pack
 assembly_info:
   patch: true
   file: '**\AssemblyInfo.*'
@@ -19,4 +19,4 @@ deploy:
   provider: NuGet
   api_key:
     secure: XImXaAhmv7juP3N1QLgjU+V2u1+QjEXJnj3mv3U1uCjSzOa8c+LTl2KP3s/ClxhJ
-  artifact: Jirapi.*.nupkg
+  artifact: Jirapi.$(APPVEYOR_BUILD_VERSION).nupkg
