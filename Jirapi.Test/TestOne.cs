@@ -75,5 +75,19 @@ namespace Jirapi.Test
             var species = await pokemon.Species.GetResource();
             Assert.IsNotNull(species);
         }
+
+        [Test]
+        public async Task Habitat_Is_Not_Null()
+        {
+            _flurlTest
+                .RespondWith(Responses.Bulbasaur)
+                .RespondWith(Responses.BulbasaurSpecies)
+                .RespondWith(Responses.BulbasaurHabitat);
+            PokeClient pc = new PokeClient();
+            var pokemon = await pc.Get<Pokemon>("bulbasaur");
+            var species = await pokemon.Species.GetResource();
+            await species.Habitat.FillResource();
+            Assert.IsNotNull(species.Habitat.Resource);
+        }
     }
 }
