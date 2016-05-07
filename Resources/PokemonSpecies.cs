@@ -83,13 +83,13 @@ namespace Jirapi.Resources
         ///     The color of this Pokémon for gimmicky Pokédex search.
         /// </summary>
         /// <value>The color.</value>
-        public List<NamedApiResource<PokemonColor>> Color { get; set; }
+        public NamedApiResource<PokemonColor> Color { get; set; }
 
         /// <summary>
         ///     The shape of this Pokémon for gimmicky Pokédex search.
         /// </summary>
         /// <value>The color.</value>
-        public List<NamedApiResource<PokemonShape>> Shape { get; set; }
+        public NamedApiResource<PokemonShape> Shape { get; set; }
 
         /// <summary>
         ///     The Pokémon species that evolves into this pokemon_species.
@@ -102,6 +102,8 @@ namespace Jirapi.Resources
         /// </summary>
         [JsonProperty("evolution_chain")]
         public ApiResource<EvolutionChain> EvolutionChain { get; set; }
+
+        // TODO: Add habitat
 
         /// <summary>
         ///     The generation this Pokémon species was introduced in.
@@ -121,5 +123,13 @@ namespace Jirapi.Resources
         /// <value>The pal park encounters.</value>
         [JsonProperty("pal_pak_encounters")]
         public List<PalParkEncounterArea> PalParkEncounters { get; set; }
+
+        // TODO: Add form_descriptions
+
+        // TODO: Add flavor_text_entries
+
+        // TODO: Add genera
+
+        // TODO: Add varieties
     }
 }

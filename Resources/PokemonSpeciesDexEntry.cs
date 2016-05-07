@@ -11,10 +11,12 @@ namespace Jirapi.Resources
         [JsonProperty("entry_number")]
         public int EntryNumber { get; set; }
 
+
+
         /// <summary>
         ///     The Pokédex the referenced Pokémon species can be found in.
         /// </summary>
         /// <value>The name.</value>
-        public string Name { get; set; }
+        public NamedApiResource<Pokedex> Pokedex { get; set; }
     }
 }
