@@ -1,7 +1,7 @@
 before_build:
   - nuget restore
 artifacts:
-  - path: '**\Jirapi*.nupkg'
+  - path: Jirapi*.nupkg
     name: pack
 assembly_info:
   patch: true
