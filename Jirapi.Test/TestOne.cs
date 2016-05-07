@@ -89,5 +89,15 @@ namespace Jirapi.Test
             await species.Habitat.FillResource();
             Assert.IsNotNull(species.Habitat.Resource);
         }
+
+        [Test]
+        public async Task Get_Item()
+        {
+            _flurlTest
+                .RespondWith(Responses.GreatBall);
+            PokeClient pc = new PokeClient();
+            var item = await pc.Get<Item>(3);
+            Assert.IsNotNull(item);
+        }
     }
 }

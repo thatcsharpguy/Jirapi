@@ -10,13 +10,13 @@ namespace Jirapi.Resources
         public int Cost { get; set; }
 
         [JsonProperty("fling_power")]
-        public int FlingPower { get; set; }
+        public int? FlingPower { get; set; }
 
         [JsonProperty("fling_effect")]
         public ItemFlingEffect FlingEffect { get; set; }
 
         public List<NamedApiResource<ItemAttribute>> Attributes { get; set; }
-        public ItemCategory Category { get; set; }
+        public NamedApiResource<ItemCategory> Category { get; set; }
 
         [JsonProperty("effect_entries")]
         public List<VerboseEffect> EffectEntries { get; set; }
