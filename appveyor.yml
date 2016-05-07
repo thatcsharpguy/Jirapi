@@ -1,5 +1,8 @@
 before_build:
   - nuget restore
+after_build
+  - cmd: appveyor PushArtifact *.nupkg
+  - nuget pack Jirapi.csproj -Build -IncludeReferencedProjects -Prop Configu
 assembly_info:
   patch: true
   file: '**\AssemblyInfo.*'
