@@ -5,7 +5,7 @@ after_build:
     nuget pack Jirapi.csproj -Build -IncludeReferencedProjects -Prop Configuration=Release
     appveyor PushArtifact *.nupkg
 artifacts:
-  - path: '**\*.nupkg'
+  - path: '**\Jirapi*.nupkg'
 assembly_info:
   patch: true
   file: '**\AssemblyInfo.*'
