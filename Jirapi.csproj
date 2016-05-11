@@ -34,12 +34,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="NamedApiResourceExtensions.cs" />
+    <Compile Include="ApiResourceExtensions.cs" />
     <Compile Include="PokeClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Ability.cs" />
     <Compile Include="Resources\AbilityPokemon.cs" />
     <Compile Include="Resources\ApiResource.cs" />
+    <Compile Include="Resources\ApiResourceList.cs" />
     <Compile Include="Resources\AwesomeName.cs" />
     <Compile Include="Resources\Berry.cs" />
     <Compile Include="Resources\BerryFirmness.cs" />

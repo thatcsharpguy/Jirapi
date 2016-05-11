@@ -3,7 +3,7 @@ using Jirapi.Resources;
 
 namespace Jirapi
 {
-    public static class NamedApiResourceExtensions
+    public static class ApiResourceExtensions
     {
         public static async Task FillResource<T>(this NamedApiResource<T> named, PokeClient client = null)
         {

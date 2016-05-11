@@ -97,5 +97,17 @@ namespace Jirapi
             }
             throw new Exception($"Support for {typeof(T).Name} is not implemented yet");
         }
+
+        public async Task<ApiResourceList<T>> GetResourceList<T>(int offset = 0, int limit = 20)
+        {
+            string pathSegment;
+            if (_urlOfType.TryGetValue(typeof(T), out pathSegment))
+            {
+                return await EndpointV2.AppendPathSegments(pathSegment)
+                    .SetQueryParams(new { limit, offset })
+                    .GetJsonAsync<ApiResourceList<T>>();
+            }
+            throw new Exception($"Support for {typeof(T).Name} is not implemented yet");
+        }
     }
 }

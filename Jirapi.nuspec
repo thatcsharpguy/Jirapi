@@ -10,7 +10,7 @@
     <iconUrl>https://raw.githubusercontent.com/ThatCSharpGuy/Jirapi/master/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Uploaded icon.</releaseNotes>
+    <releaseNotes>ApiResourceList implemented.</releaseNotes>
     <copyright>That C# guy, 2016</copyright>
     <tags>Pokémon, PokéAPI</tags>
   </metadata>

@@ -7,7 +7,7 @@ using NUnit.Framework;
 namespace Jirapi.Test
 {
     [TestFixture]
-    public class TestOne
+    public class LocalTests
     {
         private HttpTest _flurlTest;
 
