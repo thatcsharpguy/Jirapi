@@ -34,5 +34,14 @@ namespace Jirapi.Test
             Assert.IsNull(dex.Previous);
         }
 
+        [Test]
+        public async Task Pokedex_Has_Descriptions()
+        {
+            PokeClient pc = new PokeClient();
+            var dex = await pc.Get<Pokedex>(12);
+            Assert.IsNotNull(dex.Descriptions);
+            Assert.IsNotEmpty(dex.Descriptions);
+        }
+
     }
 }

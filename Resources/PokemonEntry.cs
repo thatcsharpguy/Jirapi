@@ -9,11 +9,6 @@ namespace Jirapi.Resources
         public int EntryNumber { get; set; }
 
         [JsonProperty("pokemon_species")]
-        public List<NamedApiResource<PokemonSpecies>> PokemonSpecies { get; set; }
-
-        public NamedApiResource<Region> Region { get; set; }
-
-        [JsonProperty("version_group")]
-        public NamedApiResource<VersionGroup> VersionGroup { get; set; }
+        public NamedApiResource<PokemonSpecies> PokemonSpecies { get; set; }
     }
 }

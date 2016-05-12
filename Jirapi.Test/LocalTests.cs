@@ -99,5 +99,16 @@ namespace Jirapi.Test
             var item = await pc.Get<Item>(3);
             Assert.IsNotNull(item);
         }
+
+        [Test]
+        public async Task Pokedex_Has_Descriptions()
+        {
+            _flurlTest
+                .RespondWith(Responses.KalosCentralPokedex);
+            PokeClient pc = new PokeClient();
+            var dex = await pc.Get<Pokedex>(12);
+            Assert.IsNotNull(dex.Descriptions);
+            Assert.IsNotEmpty(dex.Descriptions);
+        }
     }
 }

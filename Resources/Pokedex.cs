@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace Jirapi.Resources
 {
@@ -10,13 +11,14 @@ namespace Jirapi.Resources
         /// <summary>
         ///     Whether or not this Pokédex originated in the main series of the video games.
         /// </summary>
+        [JsonProperty("is_main_series")]
         public bool IsMainSeries { get; set; }
 
         /// <summary>
         ///     The description of this Pokédex listed in different languages.
         /// </summary>
         /// <value>The description.</value>
-        public List<Description> Description { get; set; }
+        public List<Description> Descriptions { get; set; }
 
         /// <summary>
         ///     The name of this Pokédex listed in different languages.
@@ -28,10 +30,12 @@ namespace Jirapi.Resources
         ///     A list of pokemon catalogued in this Pokédex and their indexes.
         /// </summary>
         /// <value>The pokemon entries.</value>
+        [JsonProperty("pokemon_entries")]
         public List<PokemonEntry> PokemonEntries { get; set; }
 
         public NamedApiResource<Region> Region { get; set; }
 
-        public NamedApiResource<VersionGroup> VersionGroups { get; set; }
+        [JsonProperty("version_groups")]
+        public List<NamedApiResource<VersionGroup>> VersionGroups { get; set; }
     }
 }
