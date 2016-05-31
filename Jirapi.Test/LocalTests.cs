@@ -40,14 +40,14 @@ namespace Jirapi.Test
             var pokemon = await pc.Get<Pokemon>("bulbasaur");
             Assert.IsNotNull(pokemon);
         }
-        
+
         [Test]
         public async Task PokemonSpecies_Is_Not_Null()
         {
             _flurlTest.RespondWith(Responses.Bulbasaur);
             PokeClient pc = new PokeClient();
             var pokemon = await pc.Get<Pokemon>("bulbasaur");
-            
+
             Assert.IsNotNull(pokemon);
             Assert.IsNotNull(pokemon.Species);
         }
@@ -109,6 +109,16 @@ namespace Jirapi.Test
             var dex = await pc.Get<Pokedex>(12);
             Assert.IsNotNull(dex.Descriptions);
             Assert.IsNotEmpty(dex.Descriptions);
+        }
+
+        [Test]
+        public async Task Get_Jirachi_Pokemon()
+        {
+            _flurlTest
+                .RespondWith(Responses.JirachiPokemon);
+            PokeClient pc = new PokeClient();
+            var dex = await pc.Get<Pokemon>("jirachi");
+            Assert.IsNotNull(dex.Name);
         }
     }
 }
