@@ -10,7 +10,8 @@ namespace Jirapi
 {
     public class PokeClient
     {
-        public const string EndpointV2 = "http://pokeapi.co/api/v2/";
+		public const string ServerUrl = "http://pokeapi.co";
+		public const string EndpointV2 = ServerUrl + "/api/v2/";
 
         #region Resource endpoints dictionary
 
@@ -99,7 +100,7 @@ namespace Jirapi
             string pathSegment;
             if (_urlOfType.TryGetValue(typeof(T), out pathSegment))
             {
-                return await EndpointV2.AppendPathSegment(urlPart)
+				return await ServerUrl.AppendPathSegment(urlPart)
                     .GetJsonAsync<List<T>>();
             }
             throw new Exception($"Support for {typeof(T).Name} is not implemented yet");
