@@ -10,7 +10,7 @@
     <iconUrl>https://raw.githubusercontent.com/ThatCSharpGuy/Jirapi/master/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Breaking change: location_area_encounter at Pokemon resource seems to be unstable, Jirapi won't support it at the moment.</releaseNotes>
+    <releaseNotes>location_area_encounter at Pokemon resource is back!.</releaseNotes>
     <copyright>That C# guy, 2016</copyright>
     <tags>Pokémon, PokéAPI</tags>
   </metadata>

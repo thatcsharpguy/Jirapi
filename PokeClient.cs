@@ -50,6 +50,7 @@ namespace Jirapi
 
             {typeof(Location), "location"},
             {typeof(LocationArea), "location-area"},
+            {typeof(LocationAreaEncounter), "location-area-encounter" }, // No standalone endpoint
             {typeof(PalParkArea), "pal-park-area"},
             {typeof(Region), "region"},
             {typeof(Ability), "ability"},
@@ -78,6 +79,28 @@ namespace Jirapi
             {
                 return await url
                     .GetJsonAsync<T>();
+            }
+            throw new Exception($"Support for {typeof(T).Name} is not implemented yet");
+        }
+
+        public async Task<T> GetByUrlPart<T>(string urlPart)
+        {
+            string pathSegment;
+            if (_urlOfType.TryGetValue(typeof(T), out pathSegment))
+            {
+                return await EndpointV2.AppendPathSegment(urlPart)
+                    .GetJsonAsync<T>();
+            }
+            throw new Exception($"Support for {typeof(T).Name} is not implemented yet");
+        }
+
+        public async Task<List<T>> GetListByUrlPart<T>(string urlPart)
+        {
+            string pathSegment;
+            if (_urlOfType.TryGetValue(typeof(T), out pathSegment))
+            {
+                return await EndpointV2.AppendPathSegment(urlPart)
+                    .GetJsonAsync<List<T>>();
             }
             throw new Exception($"Support for {typeof(T).Name} is not implemented yet");
         }

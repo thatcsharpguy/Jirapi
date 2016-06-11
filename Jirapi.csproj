@@ -114,6 +114,7 @@
     <Compile Include="Resources\VersionGameIndex.cs" />
     <Compile Include="Resources\VersionGroup.cs" />
     <Compile Include="Resources\VersionGroupFlavorText.cs" />
+    <Compile Include="StringApiResourceExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Flurl, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">

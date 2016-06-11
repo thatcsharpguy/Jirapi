@@ -120,5 +120,39 @@ namespace Jirapi.Test
             var dex = await pc.Get<Pokemon>("jirachi");
             Assert.IsNotNull(dex.Name);
         }
+
+        [Test]
+        public async Task Get_Caterpie_Pokemon()
+        {
+            _flurlTest
+                .RespondWith(Responses.CaterpiePokemon);
+            PokeClient pc = new PokeClient();
+            var pokemon = await pc.Get<Pokemon>(10);
+            Assert.IsNotNull(pokemon.Name);
+        }
+
+        [Test]
+        public async Task Get_Caterpie_Encounters_Classic()
+        {
+            _flurlTest
+                .RespondWith(Responses.CaterpiePokemon)
+                .RespondWith(Responses.CaterpieLocationAreaEncounters);
+            PokeClient pc = new PokeClient();
+            var pokemon = await pc.Get<Pokemon>(10);
+            var encounters = await pc.GetListByUrlPart<LocationAreaEncounter>(pokemon.LocationAreaEncounters);
+            Assert.IsNotEmpty(encounters);
+        }
+
+        [Test]
+        public async Task Get_Caterpie_Encounters_Extension()
+        {
+            _flurlTest
+                .RespondWith(Responses.CaterpiePokemon)
+                .RespondWith(Responses.CaterpieLocationAreaEncounters);
+            PokeClient pc = new PokeClient();
+            var pokemon = await pc.Get<Pokemon>(10);
+            var encounters = await pokemon.LocationAreaEncounters.GetResourceList<LocationAreaEncounter>();
+            Assert.IsNotEmpty(encounters);
+        }
     }
 }

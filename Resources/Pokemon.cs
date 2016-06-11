@@ -31,8 +31,8 @@ namespace Jirapi.Resources
         public List<NamedApiResource<Item>> HeldItems { get; set; }
 
         // Issue with recent deployment of Pokéapi
-        //[JsonProperty("location_area_encounters")]
-        //public List<LocationAreaEncounter> LocationAreaEncounters { get; set; }
+        [JsonProperty("location_area_encounters")]
+        public string LocationAreaEncounters { get; set; }
 
         public List<NamedApiResource<Move>> Moves { get; set; }
         public NamedApiResource<PokemonSpecies> Species { get; set; }
