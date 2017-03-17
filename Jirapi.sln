@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26228.4
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jirapi.Test", "Jirapi.Test\Jirapi.Test.csproj", "{FCB32B5D-4B26-441A-8EF0-12927AC2BCF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jirapi", "..\Jirapi (new)\Jirapi.csproj", "{683D6666-D6ED-401D-9D21-32A682051866}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jirapi", "Jirapi\Jirapi.csproj", "{683D6666-D6ED-401D-9D21-32A682051866}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

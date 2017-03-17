@@ -80,7 +80,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Jirapi %28new%29\Jirapi.csproj">
+    <ProjectReference Include="..\Jirapi\Jirapi.csproj">
       <Project>{683d6666-d6ed-401d-9d21-32a682051866}</Project>
       <Name>Jirapi</Name>
     </ProjectReference>
